@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+
+    {% if results %}
+        <ul>
+            {% for result in results %}
+                <li>
+                    <h2><a href="{{ result.link }}" target="_blank">{{ result.title }}</a></h2>
+                    <p><strong>Published on:</strong> {{ result.date_published }}</p>
+                    <p>{{ result.summary }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+    
+    <a href="{% url 'index' %}">Go back</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Summarizer</title>
+</head>
+<body>
+    <h1>Article Summarizer</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="query">Enter search term:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
