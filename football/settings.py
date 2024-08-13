@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-92hw0m-38tr%!!2m!d5ovycz9hq#l_cac@^@0rwj_w=&#o&akd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['football.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['football-scrapping-049dc674da89.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
